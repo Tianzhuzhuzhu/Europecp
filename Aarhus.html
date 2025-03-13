@@ -27,6 +27,21 @@
       position: relative; /* 让 tooltip 相对于这个 div 定位 */
       text-align: center;
     }
+
+        .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      display: none;
+      white-space: nowrap;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none; /* 关键：防止鼠标移到 tooltip 造成的闪烁 */
+    }	  
     button {
       background-color: #0073e6;
       color: white;
