@@ -25,23 +25,23 @@
 }
 
 
-    .button-container div {
-      position: relative; /* 让 tooltip 相对于这个 div 定位 */
-      text-align: center;
+.button-container div {
+  position: relative; /* 让 tooltip 相对于这个 div 定位 */
+  text-align: center;
     }
-    .tooltip {
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 12px;
-      display: none;
-      white-space: nowrap;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      pointer-events: none; /* 关键：防止鼠标移到 tooltip 造成的闪烁 */
+ .tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+  white-space: nowrap;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none; /* 关键：防止鼠标移到 tooltip 造成的闪烁 */
     }
 	  
 button {
@@ -84,7 +84,7 @@ button:hover {
     <div>
       <p>申请要求</p>
       <button class="tooltip-btn" onclick="window.location.href='https://www.uva.nl/en/programmes/bachelors/actuarial-science/application-and-admission/international-prior-education/entry-requirements.html#2-Your-English-proficiency'">→
-      <span class="tooltip">点击查看详情</span></button>
+      <span class="tooltip">托福92（22），雅思6.5（6）<br>3AL+3IG（C以上）（六门不一样的学科，数学和高数被视为同一门）<br>数学B以上</span></button>
     </div>
   </div>
 
