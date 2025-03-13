@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>丹麦科技大学</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    .button-container {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;  /* 确保按钮水平排列 */
+      gap: 30px;  /* 设置按钮之间的间距 */
+      margin-bottom: 30px;  /* 让按钮组和下方按钮之间有间距 */
+    }
+    .button-container div {
+      position: relative; /* 让 tooltip 相对于这个 div 定位 */
+      text-align: center;
+    }
+        .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      display: none;
+      white-space: nowrap;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none; /* 关键：防止鼠标移到 tooltip 造成的闪烁 */
+    }
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+    /* 右下角返回按钮 */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ff5722;
+      border-radius: 5px;
+    }
+    .back-button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <!-- 第一组按钮：项目主页和申请要求 -->
+    <div>
+      <p>项目主页</p>
+      <button onclick="window.location.href='https://www.dtu.dk/english/education/undergraduate/general-engineering'">通用工程</button>
+    </div>
+    <div>
+      <p>申请要求</p>
+      <button class="tooltip-btn" onclick="window.location.href='https://ufm.dk/en/education/recognition-and-transparency/find-assessments/entry-to-higher-education'">→
+      <span class="tooltip">点击查看详情</span></button>
+    </div>
+  </div>
+
+<script>
+  // 获取所有按钮
+  let tooltipButtons = document.querySelectorAll(".tooltip-btn");
+
+  tooltipButtons.forEach(button => {
+    let tooltip = button.querySelector(".tooltip");
+
+    button.addEventListener("mouseenter", () => {
+      tooltip.style.display = "block";
+    });
+
+    button.addEventListener("mouseleave", () => {
+      tooltip.style.display = "none";
+    });
+  });
+</script>	
+
+	
+																	
+  <!-- 右下角返回按钮 -->
+  <button class="back-button" onclick="window.history.back()">回到上一页</button>
+
+</body>
+</html>
