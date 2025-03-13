@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乌普拉萨大学</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    .button-container {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;  /* 确保按钮水平排列 */
+      gap: 30px;  /* 设置按钮之间的间距 */
+      margin-bottom: 30px;  /* 让按钮组和下方按钮之间有间距 */
+    }
+    .button-container div {
+      text-align: center;
+    }
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+    /* 右下角返回按钮 */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ff5722;
+      border-radius: 5px;
+    }
+    .back-button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <!-- 第一组按钮：项目主页和申请要求 -->
+    <div>
+      <p>项目主页</p>
+      <button onclick="window.location.href='https://www.uu.se/en/study/programme/bachelors-programme-egyptology'">埃及学</button>
+    </div>
+    <div>
+      <p>申请要求</p>
+      <button onclick="window.location.href='https://www.uu.se/en/study/bachelors-studies/application/entry-requirements'">→</button>
+    </div>
+  </div>
+
+  <!-- 第二组按钮：没有文字 -->
+  <div class="button-container">
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/programme/bachelors-programme-energy-transition-sustainability-and-leadership'">能源转型-可持续性和领导力</button>
+    </div>
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/bachelors-studies/application/entry-requirements'">→</button>
+    </div>
+  </div>
+  <!-- 第三组按钮：没有文字 -->
+  <div class="button-container">
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/programme/bachelors-programme-game-design-and-graphics'">游戏设计与图形</button>
+    </div> 
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/bachelors-studies/application/entry-requirements'">→</button>
+    </div>
+  </div>
+  
+	
+  <!-- 第四组按钮：没有文字 -->
+  <div class="button-container">
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/programme/bachelors-programme-game-design-and-programming'">游戏设计与编程</button>
+    </div>
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/bachelors-studies/application/entry-requirements'">→</button>
+    </div>
+  </div>
+	
+	
+  <!-- 第5组按钮：没有文字 -->
+  <div class="button-container">
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/programme/bachelors-programme-game-design-and-project-management'">游戏设计与项目管理</button>
+    </div>
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/bachelors-studies/application/entry-requirements'">→</button>
+    </div>
+  </div>
+		
+	
+  <!-- 第6组按钮：没有文字 -->
+  <div class="button-container">
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/programme/bachelors-programme-leadership-quality-management-improvement'">领导力 - 质量管理 - 改进</button>
+    </div>
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/bachelors-studies/application/entry-requirements'">→</button>
+    </div>
+  </div>
+	
+	
+  <!-- 第7组按钮：没有文字 -->
+  <div class="button-container">
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/programme/bachelors-programme-sustainable-development-industrial-engineering'">工业工程可持续发展</button>
+    </div>
+    <div>
+      <button onclick="window.location.href='https://www.uu.se/en/study/bachelors-studies/application/entry-requirements'">→</button>
+    </div>
+  </div>
+
+																			
+  <!-- 右下角返回按钮 -->
+  <button class="back-button" onclick="window.history.back()">回到上一页</button>
+
+</body>
+</html>
